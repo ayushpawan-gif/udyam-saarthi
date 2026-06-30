@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "model": "claude-haiku-4-5-20251001",
+  "tier": 0,
+  "eval": {
+    "last_run": null,
+    "citation_coverage": null,
+    "content_hit": null,
+    "passed": null,
+    "gold_count": 15
+  }
+}

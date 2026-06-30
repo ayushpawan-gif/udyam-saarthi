@@ -1,0 +1,15 @@
+{"q":"What is the cheapest business I can start from the PMRY profiles?","must_cite":["Vol IV ch24"],"expect_contains":["169050","Starters"]}
+{"q":"Which business gives the fastest payback period?","must_cite":["Vol I ch15"],"expect_contains":["Hair Brushes","1.01"]}
+{"q":"Tell me about hair brush manufacturing — what capital do I need and what return will I get?","must_cite":["Vol I ch15"],"expect_contains":["415000","98.8","1.01"]}
+{"q":"Which food sector businesses have the best rate of return?","must_cite":[],"expect_contains":["Food"]}
+{"q":"I have Rs. 5 lakh to invest. Show me 3 businesses I can start.","must_cite":[],"expect_contains":["capital","payback"]}
+{"q":"What is the break-even point for automotive chain manufacturing?","must_cite":["Vol I ch03"],"expect_contains":["51.5","Automotive Chain"]}
+{"q":"Compare hair brushes vs pressure cooker manufacturing","must_cite":["Vol I ch15","Vol I ch14"],"expect_contains":["Hair Brushes","Pressure Cooker"]}
+{"q":"Which electrical sector business has the highest return on investment?","must_cite":["Vol IV ch24"],"expect_contains":["Electrical"]}
+{"q":"What businesses can I start with under Rs. 2 lakh capital?","must_cite":[],"expect_contains":["capital"]}
+{"q":"Show me IT and electronics businesses with payback under 3 years","must_cite":[],"expect_contains":["IT","Electronics"]}
+{"q":"What is PMRY and where does this data come from?","must_cite":[],"expect_contains":["Government of India","DC(MSME)"]}
+{"q":"Which businesses in the SEND-FIRST quadrant have the best viability score?","must_cite":[],"expect_contains":["SEND-FIRST","Hair Brushes"]}
+{"q":"Tell me about starting a soap manufacturing business","must_cite":[],"expect_contains":["soap"]}
+{"q":"What is the adjusted capital needed to start hard chrome plating in 2026?","must_cite":["Vol VI ch15"],"expect_contains":["Hard Chrome","2026"]}
+{"q":"I want to start a leather goods business. What are my options?","must_cite":[],"expect_contains":["Leather"]}

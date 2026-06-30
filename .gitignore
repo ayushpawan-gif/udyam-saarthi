@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env.local
+.env
+rag/corpus-latest.json
+data/profiles.json
+*.tsbuildinfo
