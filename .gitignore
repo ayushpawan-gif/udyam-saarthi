@@ -4,4 +4,6 @@ dist/
 .env
 rag/corpus-latest.json
 data/profiles.json
+public/profiles.json
+rag/bench/results-latest.json
 *.tsbuildinfo

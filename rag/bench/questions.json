@@ -1,0 +1,1156 @@
+[
+  {
+    "id": "Q001",
+    "category": "ranking",
+    "q": "What is the cheapest business to start?",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch24"
+  },
+  {
+    "id": "Q002",
+    "category": "ranking",
+    "q": "Which business has the lowest capital requirement?",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch24"
+  },
+  {
+    "id": "Q003",
+    "category": "ranking",
+    "q": "Show me the fastest payback business",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch15"
+  },
+  {
+    "id": "Q004",
+    "category": "ranking",
+    "q": "Which business gives the quickest return?",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch15"
+  },
+  {
+    "id": "Q005",
+    "category": "ranking",
+    "q": "Highest rate of return business?",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch15"
+  },
+  {
+    "id": "Q006",
+    "category": "ranking",
+    "q": "Which has the best return on investment?",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch15"
+  },
+  {
+    "id": "Q007",
+    "category": "ranking",
+    "q": "Best business by viability score",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch24"
+  },
+  {
+    "id": "Q008",
+    "category": "ranking",
+    "q": "Top recommended business model",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch24"
+  },
+  {
+    "id": "Q009",
+    "category": "ranking",
+    "q": "Most profitable business per year",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch10"
+  },
+  {
+    "id": "Q010",
+    "category": "capital",
+    "q": "What businesses can I start under ₹50,000?",
+    "expectInstant": true,
+    "capCeil": 50000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q011",
+    "category": "capital",
+    "q": "I have 1 lakh to invest. Show me options.",
+    "expectInstant": true,
+    "capCeil": 50000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q012",
+    "category": "capital",
+    "q": "What businesses can I start under ₹1,00,000?",
+    "expectInstant": true,
+    "capCeil": 100000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q013",
+    "category": "capital",
+    "q": "I have 1 lakh to invest. Show me options.",
+    "expectInstant": true,
+    "capCeil": 100000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q014",
+    "category": "capital",
+    "q": "What businesses can I start under ₹2,00,000?",
+    "expectInstant": true,
+    "capCeil": 200000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q015",
+    "category": "capital",
+    "q": "I have 2 lakh to invest. Show me options.",
+    "expectInstant": true,
+    "capCeil": 200000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q016",
+    "category": "capital",
+    "q": "What businesses can I start under ₹5,00,000?",
+    "expectInstant": true,
+    "capCeil": 500000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q017",
+    "category": "capital",
+    "q": "I have 5 lakh to invest. Show me options.",
+    "expectInstant": true,
+    "capCeil": 500000,
+    "expectNonEmpty": false
+  },
+  {
+    "id": "Q018",
+    "category": "capital",
+    "q": "What businesses can I start under ₹10,00,000?",
+    "expectInstant": true,
+    "capCeil": 1000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q019",
+    "category": "capital",
+    "q": "I have 10 lakh to invest. Show me options.",
+    "expectInstant": true,
+    "capCeil": 1000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q020",
+    "category": "capital",
+    "q": "What businesses can I start under ₹20,00,000?",
+    "expectInstant": true,
+    "capCeil": 2000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q021",
+    "category": "capital",
+    "q": "I have 20 lakh to invest. Show me options.",
+    "expectInstant": true,
+    "capCeil": 2000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q022",
+    "category": "capital",
+    "q": "What businesses can I start under ₹50,00,000?",
+    "expectInstant": true,
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q023",
+    "category": "capital",
+    "q": "I have 50 lakh to invest. Show me options.",
+    "expectInstant": true,
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q024",
+    "category": "sector",
+    "q": "Best Mechanical sector business",
+    "expectInstant": true,
+    "sector": "Mechanical",
+    "expectTopId": "Vol I ch15"
+  },
+  {
+    "id": "Q025",
+    "category": "sector",
+    "q": "Show me Mechanical businesses",
+    "expectInstant": true,
+    "sector": "Mechanical",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q026",
+    "category": "sector",
+    "q": "Best Metallurgical sector business",
+    "expectInstant": true,
+    "sector": "Metallurgical",
+    "expectTopId": "Vol II ch12"
+  },
+  {
+    "id": "Q027",
+    "category": "sector",
+    "q": "Show me Metallurgical businesses",
+    "expectInstant": true,
+    "sector": "Metallurgical",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q028",
+    "category": "sector",
+    "q": "Best Hosiery sector business",
+    "expectInstant": true,
+    "sector": "Hosiery",
+    "expectTopId": "Vol III ch23"
+  },
+  {
+    "id": "Q029",
+    "category": "sector",
+    "q": "Show me Hosiery businesses",
+    "expectInstant": true,
+    "sector": "Hosiery",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q030",
+    "category": "sector",
+    "q": "Best Electrical sector business",
+    "expectInstant": true,
+    "sector": "Electrical",
+    "expectTopId": "Vol IV ch24"
+  },
+  {
+    "id": "Q031",
+    "category": "sector",
+    "q": "Show me Electrical businesses",
+    "expectInstant": true,
+    "sector": "Electrical",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q032",
+    "category": "sector",
+    "q": "Best IT & Electronics sector business",
+    "expectInstant": true,
+    "sector": "IT & Electronics",
+    "expectTopId": "Vol V ch06"
+  },
+  {
+    "id": "Q033",
+    "category": "sector",
+    "q": "Show me IT & Electronics businesses",
+    "expectInstant": true,
+    "sector": "IT & Electronics",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q034",
+    "category": "sector",
+    "q": "Best Chemical sector business",
+    "expectInstant": true,
+    "sector": "Chemical",
+    "expectTopId": "Vol VI ch15"
+  },
+  {
+    "id": "Q035",
+    "category": "sector",
+    "q": "Show me Chemical businesses",
+    "expectInstant": true,
+    "sector": "Chemical",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q036",
+    "category": "sector",
+    "q": "Best Food sector business",
+    "expectInstant": true,
+    "sector": "Food",
+    "expectTopId": "Vol VII ch16"
+  },
+  {
+    "id": "Q037",
+    "category": "sector",
+    "q": "Show me Food businesses",
+    "expectInstant": true,
+    "sector": "Food",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q038",
+    "category": "sector",
+    "q": "Best Glass & Ceramics sector business",
+    "expectInstant": true,
+    "sector": "Glass & Ceramics",
+    "expectTopId": "Vol VIII ch16"
+  },
+  {
+    "id": "Q039",
+    "category": "sector",
+    "q": "Show me Glass & Ceramics businesses",
+    "expectInstant": true,
+    "sector": "Glass & Ceramics",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q040",
+    "category": "sector",
+    "q": "Best Leather & Sports sector business",
+    "expectInstant": true,
+    "sector": "Leather & Sports",
+    "expectTopId": "Vol IX ch13"
+  },
+  {
+    "id": "Q041",
+    "category": "sector",
+    "q": "Show me Leather & Sports businesses",
+    "expectInstant": true,
+    "sector": "Leather & Sports",
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q042",
+    "category": "composite",
+    "q": "Cheapest Mechanical business under ₹50 lakh",
+    "expectInstant": true,
+    "sector": "Mechanical",
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q043",
+    "category": "composite",
+    "q": "Cheapest Metallurgical business under ₹50 lakh",
+    "expectInstant": true,
+    "sector": "Metallurgical",
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q044",
+    "category": "composite",
+    "q": "Cheapest Hosiery business under ₹50 lakh",
+    "expectInstant": true,
+    "sector": "Hosiery",
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q045",
+    "category": "composite",
+    "q": "Cheapest Electrical business under ₹50 lakh",
+    "expectInstant": true,
+    "sector": "Electrical",
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q046",
+    "category": "composite",
+    "q": "Cheapest IT & Electronics business under ₹50 lakh",
+    "expectInstant": true,
+    "sector": "IT & Electronics",
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q047",
+    "category": "composite",
+    "q": "Cheapest Chemical business under ₹50 lakh",
+    "expectInstant": true,
+    "sector": "Chemical",
+    "capCeil": 5000000,
+    "expectNonEmpty": true
+  },
+  {
+    "id": "Q048",
+    "category": "lookup",
+    "q": "Aluminium Fabrications",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch01"
+  },
+  {
+    "id": "Q049",
+    "category": "lookup",
+    "q": "Automobile Control Cables",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch06"
+  },
+  {
+    "id": "Q050",
+    "category": "lookup",
+    "q": "Computer Furniture",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch11"
+  },
+  {
+    "id": "Q051",
+    "category": "lookup",
+    "q": "Measuring Tapes (Steel)",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch16"
+  },
+  {
+    "id": "Q052",
+    "category": "lookup",
+    "q": "Tyre Retreading (By Cold Process)",
+    "expectInstant": true,
+    "expectTopId": "Vol I ch21"
+  },
+  {
+    "id": "Q053",
+    "category": "lookup",
+    "q": "Aluminium Powder",
+    "expectInstant": true,
+    "expectTopId": "Vol II ch01"
+  },
+  {
+    "id": "Q054",
+    "category": "lookup",
+    "q": "Brake Drum Casting",
+    "expectInstant": true,
+    "expectTopId": "Vol II ch06"
+  },
+  {
+    "id": "Q055",
+    "category": "lookup",
+    "q": "Galvanised M.S. Wire",
+    "expectInstant": true,
+    "expectTopId": "Vol II ch11"
+  },
+  {
+    "id": "Q056",
+    "category": "lookup",
+    "q": "Malleable Iron Casting",
+    "expectInstant": true,
+    "expectTopId": "Vol II ch16"
+  },
+  {
+    "id": "Q057",
+    "category": "lookup",
+    "q": "S.S. Ingots",
+    "expectInstant": true,
+    "expectTopId": "Vol II ch21"
+  },
+  {
+    "id": "Q058",
+    "category": "lookup",
+    "q": "Baby Bloomer Suits",
+    "expectInstant": true,
+    "expectTopId": "Vol III ch01"
+  },
+  {
+    "id": "Q059",
+    "category": "lookup",
+    "q": "Cotton Lycra (Spandex) Knitted Wears",
+    "expectInstant": true,
+    "expectTopId": "Vol III ch06"
+  },
+  {
+    "id": "Q060",
+    "category": "lookup",
+    "q": "Infant Garments",
+    "expectInstant": true,
+    "expectTopId": "Vol III ch11"
+  },
+  {
+    "id": "Q061",
+    "category": "lookup",
+    "q": "Mosquito Net",
+    "expectInstant": true,
+    "expectTopId": "Vol III ch16"
+  },
+  {
+    "id": "Q062",
+    "category": "lookup",
+    "q": "Textile Screen Printing",
+    "expectInstant": true,
+    "expectTopId": "Vol III ch21"
+  },
+  {
+    "id": "Q063",
+    "category": "lookup",
+    "q": "Aluminium Conductors AAC, AAAC, ACSR",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch01"
+  },
+  {
+    "id": "Q064",
+    "category": "lookup",
+    "q": "Chokes for Sodium/Mercury Vapour Lamps",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch06"
+  },
+  {
+    "id": "Q065",
+    "category": "lookup",
+    "q": "Electric Furnace",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch11"
+  },
+  {
+    "id": "Q066",
+    "category": "lookup",
+    "q": "HRC Fuse Links, 1000 VAC",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch16"
+  },
+  {
+    "id": "Q067",
+    "category": "lookup",
+    "q": "Pvc Cables",
+    "expectInstant": true,
+    "expectTopId": "Vol IV ch21"
+  },
+  {
+    "id": "Q068",
+    "category": "lookup",
+    "q": "Electronic Gas Lighters",
+    "expectInstant": true,
+    "expectTopId": "Vol V ch01"
+  },
+  {
+    "id": "Q069",
+    "category": "lookup",
+    "q": "Electronic Burglar Alarm System for Automobiles",
+    "expectInstant": true,
+    "expectTopId": "Vol V ch06"
+  },
+  {
+    "id": "Q070",
+    "category": "lookup",
+    "q": "Computer Key Boards (Membrane Type)",
+    "expectInstant": true,
+    "expectTopId": "Vol V ch11"
+  },
+  {
+    "id": "Q071",
+    "category": "lookup",
+    "q": "Modem",
+    "expectInstant": true,
+    "expectTopId": "Vol V ch16"
+  },
+  {
+    "id": "Q072",
+    "category": "lookup",
+    "q": "Crimped Wire Connectors",
+    "expectInstant": true,
+    "expectTopId": "Vol V ch21"
+  },
+  {
+    "id": "Q073",
+    "category": "lookup",
+    "q": "Acid Slurry (ALKYL Benzene Sulphonate)",
+    "expectInstant": true,
+    "expectTopId": "Vol VI ch01"
+  },
+  {
+    "id": "Q074",
+    "category": "lookup",
+    "q": "Cement Paints",
+    "expectInstant": true,
+    "expectTopId": "Vol VI ch06"
+  },
+  {
+    "id": "Q075",
+    "category": "lookup",
+    "q": "Disposable Syringes",
+    "expectInstant": true,
+    "expectTopId": "Vol VI ch11"
+  },
+  {
+    "id": "Q076",
+    "category": "lookup",
+    "q": "Menthol Crystal",
+    "expectInstant": true,
+    "expectTopId": "Vol VI ch16"
+  },
+  {
+    "id": "Q077",
+    "category": "lookup",
+    "q": "Rotogravure Printing",
+    "expectInstant": true,
+    "expectTopId": "Vol VI ch21"
+  },
+  {
+    "id": "Q078",
+    "category": "lookup",
+    "q": "Bread",
+    "expectInstant": true,
+    "expectTopId": "Vol VII ch01"
+  },
+  {
+    "id": "Q079",
+    "category": "lookup",
+    "q": "Coffee Flavoured Milk",
+    "expectInstant": true,
+    "expectTopId": "Vol VII ch06"
+  },
+  {
+    "id": "Q080",
+    "category": "lookup",
+    "q": "Fish Pickle",
+    "expectInstant": true,
+    "expectTopId": "Vol VII ch11"
+  },
+  {
+    "id": "Q081",
+    "category": "lookup",
+    "q": "Noodles",
+    "expectInstant": true,
+    "expectTopId": "Vol VII ch16"
+  },
+  {
+    "id": "Q082",
+    "category": "lookup",
+    "q": "Shrimp Papad",
+    "expectInstant": true,
+    "expectTopId": "Vol VII ch21"
+  },
+  {
+    "id": "Q083",
+    "category": "lookup",
+    "q": "Asbestos Pressure Pipes and Fittings",
+    "expectInstant": true,
+    "expectTopId": "Vol VIII ch01"
+  },
+  {
+    "id": "Q084",
+    "category": "lookup",
+    "q": "Ceramic Capacitors",
+    "expectInstant": true,
+    "expectTopId": "Vol VIII ch06"
+  },
+  {
+    "id": "Q085",
+    "category": "lookup",
+    "q": "Flooring Tiles (Granite)",
+    "expectInstant": true,
+    "expectTopId": "Vol VIII ch11"
+  },
+  {
+    "id": "Q086",
+    "category": "lookup",
+    "q": "Laminated Safety Glass",
+    "expectInstant": true,
+    "expectTopId": "Vol VIII ch16"
+  },
+  {
+    "id": "Q087",
+    "category": "lookup",
+    "q": "R.C.C. Spun Pipe",
+    "expectInstant": true,
+    "expectTopId": "Vol VIII ch21"
+  },
+  {
+    "id": "Q088",
+    "category": "lookup",
+    "q": "Canvas Shoes",
+    "expectInstant": true,
+    "expectTopId": "Vol IX ch01"
+  },
+  {
+    "id": "Q089",
+    "category": "lookup",
+    "q": "Gents Leather Long Boot (Welted)",
+    "expectInstant": true,
+    "expectTopId": "Vol IX ch06"
+  },
+  {
+    "id": "Q090",
+    "category": "lookup",
+    "q": "Leather Garment",
+    "expectInstant": true,
+    "expectTopId": "Vol IX ch11"
+  },
+  {
+    "id": "Q091",
+    "category": "lookup",
+    "q": "Nubuck Leather",
+    "expectInstant": true,
+    "expectTopId": "Vol IX ch16"
+  },
+  {
+    "id": "Q092",
+    "category": "lookup",
+    "q": "Shuttle Cock",
+    "expectInstant": true,
+    "expectTopId": "Vol IX ch21"
+  },
+  {
+    "id": "Q093",
+    "category": "comparison",
+    "q": "Compare Starters for Fluorescent Tubes vs Repair and Service Centre For Consumer Electronics and Tele-communication Equipment",
+    "expectInstant": false,
+    "expectContains": [
+      "Starters",
+      "Repair"
+    ]
+  },
+  {
+    "id": "Q094",
+    "category": "comparison",
+    "q": "Compare Hard Chrome Plating vs Automobile Control Cables",
+    "expectInstant": false,
+    "expectContains": [
+      "Hard",
+      "Automobile"
+    ]
+  },
+  {
+    "id": "Q095",
+    "category": "comparison",
+    "q": "Compare Hair Brushes vs Pvc Cables",
+    "expectInstant": false,
+    "expectContains": [
+      "Hair",
+      "Pvc"
+    ]
+  },
+  {
+    "id": "Q096",
+    "category": "comparison",
+    "q": "Compare Electronic Burglar Alarm System for Automobiles vs Electric Furnace",
+    "expectInstant": false,
+    "expectContains": [
+      "Electronic",
+      "Electric"
+    ]
+  },
+  {
+    "id": "Q097",
+    "category": "comparison",
+    "q": "Compare Gold Plating on Metallic Optical Frames and Jewellery vs Electric Tandoor",
+    "expectInstant": false,
+    "expectContains": [
+      "Gold",
+      "Electric"
+    ]
+  },
+  {
+    "id": "Q098",
+    "category": "comparison",
+    "q": "Compare Table Fan vs Ground and Processed Spices",
+    "expectInstant": false,
+    "expectContains": [
+      "Table",
+      "Ground"
+    ]
+  },
+  {
+    "id": "Q099",
+    "category": "comparison",
+    "q": "Compare Desk Top Publishing Centre vs Tyre Retreading (By Cold Process)",
+    "expectInstant": false,
+    "expectContains": [
+      "Desk",
+      "Tyre"
+    ]
+  },
+  {
+    "id": "Q100",
+    "category": "comparison",
+    "q": "Compare Wire Wound Resistors vs Woollen Mufflers Knitted",
+    "expectInstant": false,
+    "expectContains": [
+      "Wire",
+      "Woollen"
+    ]
+  },
+  {
+    "id": "Q101",
+    "category": "comparison",
+    "q": "Compare Heat Treatment Servicing Unit vs Automatic Curtain Opener",
+    "expectInstant": false,
+    "expectContains": [
+      "Heat",
+      "Automatic"
+    ]
+  },
+  {
+    "id": "Q102",
+    "category": "comparison",
+    "q": "Compare Noodles vs Hot Cases",
+    "expectInstant": false,
+    "expectContains": [
+      "Noodles",
+      "Hot"
+    ]
+  },
+  {
+    "id": "Q103",
+    "category": "comparison",
+    "q": "Compare Distribution Board vs Detergent Powder and Cake",
+    "expectInstant": false,
+    "expectContains": [
+      "Distribution",
+      "Detergent"
+    ]
+  },
+  {
+    "id": "Q104",
+    "category": "comparison",
+    "q": "Compare Soya Based Food Products vs Neck-Ties",
+    "expectInstant": false,
+    "expectContains": [
+      "Soya",
+      "Neck-Ties"
+    ]
+  },
+  {
+    "id": "Q105",
+    "category": "comparison",
+    "q": "Compare Modem vs Cement Paints",
+    "expectInstant": false,
+    "expectContains": [
+      "Modem",
+      "Cement"
+    ]
+  },
+  {
+    "id": "Q106",
+    "category": "comparison",
+    "q": "Compare Automobile Silencer vs Electronic Weighing Scales",
+    "expectInstant": false,
+    "expectContains": [
+      "Automobile",
+      "Electronic"
+    ]
+  },
+  {
+    "id": "Q107",
+    "category": "advisory",
+    "q": "How do I start Starters for Fluorescent Tubes?",
+    "expectInstant": false,
+    "expectContains": [
+      "Starters"
+    ]
+  },
+  {
+    "id": "Q108",
+    "category": "advisory",
+    "q": "What are the risks of Hard Chrome Plating?",
+    "expectInstant": false,
+    "expectContains": [
+      "Hard"
+    ]
+  },
+  {
+    "id": "Q109",
+    "category": "advisory",
+    "q": "Why is Hair Brushes a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Hair"
+    ]
+  },
+  {
+    "id": "Q110",
+    "category": "advisory",
+    "q": "How do I start Electronic Burglar Alarm System for Automobiles?",
+    "expectInstant": false,
+    "expectContains": [
+      "Electronic"
+    ]
+  },
+  {
+    "id": "Q111",
+    "category": "advisory",
+    "q": "What are the risks of Gold Plating on Metallic Optical Frames and Jewellery?",
+    "expectInstant": false,
+    "expectContains": [
+      "Gold"
+    ]
+  },
+  {
+    "id": "Q112",
+    "category": "advisory",
+    "q": "Why is Table Fan a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Table"
+    ]
+  },
+  {
+    "id": "Q113",
+    "category": "advisory",
+    "q": "How do I start Desk Top Publishing Centre?",
+    "expectInstant": false,
+    "expectContains": [
+      "Desk"
+    ]
+  },
+  {
+    "id": "Q114",
+    "category": "advisory",
+    "q": "What are the risks of Wire Wound Resistors?",
+    "expectInstant": false,
+    "expectContains": [
+      "Wire"
+    ]
+  },
+  {
+    "id": "Q115",
+    "category": "advisory",
+    "q": "Why is Heat Treatment Servicing Unit a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Heat"
+    ]
+  },
+  {
+    "id": "Q116",
+    "category": "advisory",
+    "q": "How do I start Noodles?",
+    "expectInstant": false,
+    "expectContains": [
+      "Noodles"
+    ]
+  },
+  {
+    "id": "Q117",
+    "category": "advisory",
+    "q": "What are the risks of Distribution Board?",
+    "expectInstant": false,
+    "expectContains": [
+      "Distribution"
+    ]
+  },
+  {
+    "id": "Q118",
+    "category": "advisory",
+    "q": "Why is Soya Based Food Products a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Soya"
+    ]
+  },
+  {
+    "id": "Q119",
+    "category": "advisory",
+    "q": "How do I start Modem?",
+    "expectInstant": false,
+    "expectContains": [
+      "Modem"
+    ]
+  },
+  {
+    "id": "Q120",
+    "category": "advisory",
+    "q": "What are the risks of Automobile Silencer?",
+    "expectInstant": false,
+    "expectContains": [
+      "Automobile"
+    ]
+  },
+  {
+    "id": "Q121",
+    "category": "advisory",
+    "q": "Why is Watch Strap Metallic a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Watch"
+    ]
+  },
+  {
+    "id": "Q122",
+    "category": "advisory",
+    "q": "How do I start Wafer Biscuits (Bakery Products)?",
+    "expectInstant": false,
+    "expectContains": [
+      "Wafer"
+    ]
+  },
+  {
+    "id": "Q123",
+    "category": "advisory",
+    "q": "What are the risks of Computerised Wheel Balancing and Wheel Alignment Workshop?",
+    "expectInstant": false,
+    "expectContains": [
+      "Computerised"
+    ]
+  },
+  {
+    "id": "Q124",
+    "category": "advisory",
+    "q": "Why is Wind Cheater a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Wind"
+    ]
+  },
+  {
+    "id": "Q125",
+    "category": "advisory",
+    "q": "How do I start Laminated Safety Glass?",
+    "expectInstant": false,
+    "expectContains": [
+      "Laminated"
+    ]
+  },
+  {
+    "id": "Q126",
+    "category": "advisory",
+    "q": "What are the risks of Acid Slurry (ALKYL Benzene Sulphonate)?",
+    "expectInstant": false,
+    "expectContains": [
+      "Acid"
+    ]
+  },
+  {
+    "id": "Q127",
+    "category": "advisory",
+    "q": "Why is Repair and Service Centre For Consumer Electronics and Tele-communication Equipment a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Repair"
+    ]
+  },
+  {
+    "id": "Q128",
+    "category": "advisory",
+    "q": "How do I start Automobile Control Cables?",
+    "expectInstant": false,
+    "expectContains": [
+      "Automobile"
+    ]
+  },
+  {
+    "id": "Q129",
+    "category": "advisory",
+    "q": "What are the risks of Pvc Cables?",
+    "expectInstant": false,
+    "expectContains": [
+      "Pvc"
+    ]
+  },
+  {
+    "id": "Q130",
+    "category": "advisory",
+    "q": "Why is Electric Furnace a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "Q131",
+    "category": "advisory",
+    "q": "How do I start Electric Tandoor?",
+    "expectInstant": false,
+    "expectContains": [
+      "Electric"
+    ]
+  },
+  {
+    "id": "Q132",
+    "category": "advisory",
+    "q": "What are the risks of Ground and Processed Spices?",
+    "expectInstant": false,
+    "expectContains": [
+      "Ground"
+    ]
+  },
+  {
+    "id": "Q133",
+    "category": "advisory",
+    "q": "Why is Tyre Retreading (By Cold Process) a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Tyre"
+    ]
+  },
+  {
+    "id": "Q134",
+    "category": "advisory",
+    "q": "How do I start Woollen Mufflers Knitted?",
+    "expectInstant": false,
+    "expectContains": [
+      "Woollen"
+    ]
+  },
+  {
+    "id": "Q135",
+    "category": "advisory",
+    "q": "What are the risks of Automatic Curtain Opener?",
+    "expectInstant": false,
+    "expectContains": [
+      "Automatic"
+    ]
+  },
+  {
+    "id": "Q136",
+    "category": "advisory",
+    "q": "Why is Hot Cases a good or bad idea?",
+    "expectInstant": false,
+    "expectContains": [
+      "Hot"
+    ]
+  },
+  {
+    "id": "Q137",
+    "category": "meta",
+    "q": "What is PMRY and where does this data come from?",
+    "expectInstant": false,
+    "expectContains": [
+      "government"
+    ]
+  },
+  {
+    "id": "Q138",
+    "category": "meta",
+    "q": "How reliable is this data?",
+    "expectInstant": false
+  },
+  {
+    "id": "Q139",
+    "category": "meta",
+    "q": "What years are these figures from?",
+    "expectInstant": false
+  },
+  {
+    "id": "Q140",
+    "category": "out_of_scope",
+    "q": "What's the weather in Mumbai today?",
+    "expectInstant": false,
+    "expectRefusal": true
+  },
+  {
+    "id": "Q141",
+    "category": "out_of_scope",
+    "q": "Write me a poem about the ocean",
+    "expectInstant": false,
+    "expectRefusal": true
+  },
+  {
+    "id": "Q142",
+    "category": "out_of_scope",
+    "q": "Who won the cricket world cup?",
+    "expectInstant": false,
+    "expectRefusal": true
+  },
+  {
+    "id": "Q143",
+    "category": "out_of_scope",
+    "q": "How do I invest in US stocks?",
+    "expectInstant": false,
+    "expectRefusal": true
+  },
+  {
+    "id": "Q144",
+    "category": "out_of_scope",
+    "q": "What's the best mutual fund in India?",
+    "expectInstant": false,
+    "expectRefusal": true
+  }
+]

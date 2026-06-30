@@ -38,7 +38,7 @@ function loadDocs(): DocBlock[] {
   return corpus.documents as DocBlock[];
 }
 
-function getDocBlocks(): DocBlock[] {
+export function getDocBlocks(): DocBlock[] {
   if (!DOCS) DOCS = loadDocs();
   return DOCS;
 }

@@ -10,11 +10,15 @@
     "preview": "vite preview",
     "rag:sync": "node rag/sync-source.mjs",
     "rag:build": "node rag/build-corpus.mjs",
-    "rag:eval": "tsx rag/eval/run-eval.ts"
+    "rag:eval": "tsx rag/eval/run-eval.ts",
+    "rag:bench:gen": "node rag/bench/generate-questions.mjs",
+    "rag:bench": "tsx rag/bench/run-bench.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.1",
     "@tailwindcss/vite": "^4.3.0",
+    "gsap": "^3.15.0",
+    "motion": "^12.42.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.17.0",

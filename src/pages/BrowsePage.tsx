@@ -1,25 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { SECTORS, type Profile } from '../lib/profiles'
 
-interface Profile {
-  id: string
-  product_name: string
-  category: string
-  quadrant: string
-  combined_score: number
-  cap_adj: number
-  rate_of_return_pct: number
-  payback_years: number
-  break_even_pct: number
-  annual_turnover: number
-  net_profit: number
-  net_profit_ratio_pct: number
-  total_capital_investment: number
-  ease_score: number
-  return_score: number
-}
-
-const SECTORS = ['Chemical', 'Electrical', 'Food', 'IT & Electronics', 'Leather & Sports', 'Mechanical', 'Others', 'Paper', 'Polymer']
 const SORTS = [
   { value: 'combined_score', label: 'Best score' },
   { value: 'payback', label: 'Fastest payback' },
@@ -105,11 +87,11 @@ function ProfileModal({ profile, onClose }: { profile: Profile; onClose: () => v
         </div>
 
         <button
-          onClick={() => navigate(`/chat?q=${encodeURIComponent(`Tell me about ${profile.product_name} — capital, returns, and market context`)}`)}
+          onClick={() => navigate(`/business/${encodeURIComponent(profile.id)}`)}
           className="w-full py-2.5 rounded-xl text-white text-sm font-semibold"
           style={{ background: 'var(--color-navy)' }}
         >
-          Ask about this business →
+          Open this business →
         </button>
       </div>
     </div>

@@ -114,6 +114,12 @@ const dataDir = join(here, "..", "data");
 mkdirSync(dataDir, { recursive: true });
 writeFileSync(join(dataDir, "profiles.json"), JSON.stringify(profiles));
 
+// And a copy under public/ so the frontend can fetch it directly for
+// client-side instant answers + all Layer 1/2 filtering (no serverless hop).
+const publicDir = join(here, "..", "public");
+mkdirSync(publicDir, { recursive: true });
+writeFileSync(join(publicDir, "profiles.json"), JSON.stringify(profiles));
+
 if (approxTokens > 150_000) {
   console.error(`ERROR: Corpus too large (${approxTokens} tokens > 150K limit). Reduce enrichment sections.`);
   process.exit(1);
