@@ -6,13 +6,14 @@ import { dirname, join } from "node:path";
 
 const here = dirname(fileURLToPath(import.meta.url));
 
-// Path to the 225-profile JSON (relative to this script inside app/rag/)
-const dataPath = join(here, "..", "..", "..", "..", "..", "New Ideas", "PMRY-Project-Profiles", "00-DATA.json");
-const enrichedDir = join(here, "..", "..", "..", "..", "..", "New Ideas", "PMRY-Project-Profiles", "00-AIKosh-Contributions", "profiles");
-const trackerPath = join(here, "..", "..", "..", "..", "..", "New Ideas", "PMRY-Project-Profiles", "00-AIKosh-Contributions", "00-TRACKER.json");
+// Source data is bundled into the repo at rag/source/ so Vercel can build it.
+// Refresh from the canonical New Ideas/ folder with: npm run rag:sync
+const dataPath = join(here, "source", "00-DATA.json");
+const enrichedDir = join(here, "source", "profiles");
+const trackerPath = join(here, "source", "00-TRACKER.json");
 
 if (!existsSync(dataPath)) {
-  console.error(`ERROR: Cannot find 00-DATA.json at:\n  ${dataPath}`);
+  console.error(`ERROR: Cannot find 00-DATA.json at:\n  ${dataPath}\n  Run "npm run rag:sync" to copy source data into the repo.`);
   process.exit(1);
 }
 

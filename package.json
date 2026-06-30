@@ -8,6 +8,7 @@
     "build": "npm run rag:build && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "rag:sync": "node rag/sync-source.mjs",
     "rag:build": "node rag/build-corpus.mjs",
     "rag:eval": "tsx rag/eval/run-eval.ts"
   },
