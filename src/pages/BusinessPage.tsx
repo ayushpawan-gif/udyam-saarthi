@@ -1,15 +1,28 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { motion } from 'motion/react'
+import { motion, AnimatePresence } from 'motion/react'
 import { loadProfiles, fmtRs, fmtPct, isSendFirst, type Profile } from '../lib/profiles'
 import { zoomIn } from '../lib/motion'
 import AskPanel from '../components/AskPanel'
+
+const FinancialModel = lazy(() => import('../components/FinancialModel'))
+const MarketResearch = lazy(() => import('../components/MarketResearch'))
+const LeadGen = lazy(() => import('../components/LeadGen'))
+
+type AnalysisTab = 'model' | 'research' | 'leads'
+
+const TABS: { key: AnalysisTab; label: string; sub: string }[] = [
+  { key: 'model', label: '5-Year Model', sub: 'Projections + sensitivity' },
+  { key: 'research', label: 'Market Research', sub: 'Live prices + demand' },
+  { key: 'leads', label: 'Find Buyers', sub: 'Channels + GoI schemes' },
+]
 
 export default function BusinessPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
   const [p, setP] = useState<Profile | null>(null)
   const [loading, setLoading] = useState(true)
+  const [activeTab, setActiveTab] = useState<AnalysisTab | null>(null)
 
   useEffect(() => {
     loadProfiles().then((all) => {
@@ -52,7 +65,7 @@ export default function BusinessPage() {
         </span>
       </div>
 
-      {/* Financial snapshot (Layer 3) */}
+      {/* Financial snapshot */}
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
         <Metric label="Capital — 2003" value={fmtRs(p.total_capital_investment)} />
         <Metric label="Capital — 2026 (×4)" value={fmtRs(p.cap_adj)} accent />
@@ -72,6 +85,56 @@ export default function BusinessPage() {
         </div>
       )}
 
+      {/* Deep Analysis — Phase 4 */}
+      <div className="rounded-2xl border bg-white mb-6" style={{ borderColor: 'var(--color-border)', boxShadow: 'var(--shadow-card)' }}>
+        {/* Tab bar */}
+        <div className="flex border-b" style={{ borderColor: 'var(--color-border)' }}>
+          <div className="px-4 py-3 flex items-center border-r shrink-0" style={{ borderColor: 'var(--color-border)' }}>
+            <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-ink-faint)' }}>Deep Analysis</p>
+          </div>
+          {TABS.map((tab) => (
+            <button
+              key={tab.key}
+              onClick={() => setActiveTab(activeTab === tab.key ? null : tab.key)}
+              className="flex-1 px-3 py-2.5 text-left transition-colors border-r last:border-r-0"
+              style={{
+                borderColor: 'var(--color-border)',
+                background: activeTab === tab.key ? 'var(--color-cream)' : 'transparent',
+              }}
+            >
+              <p className="text-xs font-semibold" style={{ color: activeTab === tab.key ? 'var(--color-navy)' : 'var(--color-ink-soft)' }}>{tab.label}</p>
+              <p className="text-[10px] hidden sm:block mt-0.5" style={{ color: 'var(--color-ink-faint)' }}>{tab.sub}</p>
+            </button>
+          ))}
+        </div>
+
+        {/* Tab content */}
+        <AnimatePresence mode="wait">
+          {activeTab && (
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              transition={{ duration: 0.2 }}
+              className="p-5"
+            >
+              <Suspense fallback={<LoadingTab />}>
+                {activeTab === 'model' && <FinancialModel profile={p} />}
+                {activeTab === 'research' && <MarketResearch productName={p.product_name} category={p.category} />}
+                {activeTab === 'leads' && <LeadGen profile={p} />}
+              </Suspense>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {!activeTab && (
+          <div className="px-5 py-4 text-xs" style={{ color: 'var(--color-ink-faint)' }}>
+            Select a tab above to run deep analysis on this business model.
+          </div>
+        )}
+      </div>
+
       {/* Scoped ask (Layer 4) */}
       <div className="rounded-2xl border bg-white p-4" style={{ borderColor: 'var(--color-border)', boxShadow: 'var(--shadow-card)' }}>
         <h2 className="text-sm font-semibold mb-1" style={{ color: 'var(--color-navy)' }}>Ask about {p.product_name}</h2>
@@ -89,6 +152,16 @@ function Metric({ label, value, accent, good }: { label: string; value: string; 
     <div className="p-3 rounded-xl border bg-white" style={{ borderColor: 'var(--color-border)' }}>
       <p className="text-[11px] font-medium mb-1" style={{ color: 'var(--color-ink-faint)' }}>{label}</p>
       <p className="font-bold text-base" style={{ color: good ? 'var(--color-green)' : accent ? 'var(--color-saffron-deep, #b45e14)' : 'var(--color-navy)' }}>{value}</p>
+    </div>
+  )
+}
+
+function LoadingTab() {
+  return (
+    <div className="space-y-3 py-2">
+      {[88, 72, 80, 65].map((w, i) => (
+        <div key={i} className="h-3 rounded shimmer" style={{ width: `${w}%` }} />
+      ))}
     </div>
   )
 }
