@@ -2,7 +2,7 @@
 // question doesn't pay the cold-start corpus prefill. Hit it every ~5 min from an
 // external pinger (UptimeRobot / cron-job.org) or the Make.com cadence infra.
 // No LLM call, no tokens spent.
-import { getDocBlocks } from "../rag/answer";
+import { getDocBlocks } from "../rag/answer.js";
 
 export const config = { runtime: "nodejs" };
 

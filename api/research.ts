@@ -41,7 +41,7 @@ export default async function handler(req: Request): Promise<Response> {
               },
             ],
             tools: [{ type: "web_search_20250305", name: "web_search" }] as unknown as Anthropic.Beta.Messages.BetaTool[],
-            betas: ["web-search-2025-03-05" as Anthropic.BetaAPI.AnthropicBeta],
+            betas: ["web-search-2025-03-05" as Anthropic.AnthropicBeta],
           },
         );
 

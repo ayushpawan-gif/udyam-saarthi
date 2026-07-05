@@ -1,6 +1,6 @@
 // POST /api/ask { "question": "..." }  →  SSE stream of {text}/{citation}/{quality}.
 // Vercel serverless function (Node runtime).
-import { answer } from "../rag/answer";
+import { answer } from "../rag/answer.js";
 
 export const config = { runtime: "nodejs", maxDuration: 60 };
 
