@@ -27,7 +27,7 @@ Rules:
 - nextStep: one sentence, specific and actionable
 Return ONLY the JSON object. No other text.`;
 
-export default async function handler(req: Request): Promise<Response> {
+async function handler(req: Request): Promise<Response> {
   if (req.method !== "POST") return new Response("Method Not Allowed", { status: 405 });
 
   const { productName, category, annualTurnover, netProfit } =
@@ -70,3 +70,5 @@ Identify buyers, channels, export markets, government opportunities, and the mos
     return new Response(JSON.stringify({ error: msg }), { status: 500 });
   }
 }
+
+export default { fetch: handler };

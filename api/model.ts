@@ -12,7 +12,7 @@ function fmtL(n: number) {
   return `₹${Math.round(n).toLocaleString("en-IN")}`;
 }
 
-export default async function handler(req: Request): Promise<Response> {
+async function handler(req: Request): Promise<Response> {
   if (req.method !== "POST") return new Response("Method Not Allowed", { status: 405 });
 
   const body = await req.json().catch(() => null);
@@ -69,3 +69,5 @@ Speak directly to the entrepreneur. Use Indian market context. Be concise.`;
     headers: { "content-type": "text/event-stream", "cache-control": "no-cache", connection: "keep-alive" },
   });
 }
+
+export default { fetch: handler };

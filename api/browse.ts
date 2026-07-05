@@ -27,7 +27,7 @@ interface Profile {
   payback_years: number;
 }
 
-export default function handler(req: Request): Response {
+function handler(req: Request): Response {
   if (req.method !== "GET") return new Response("Method Not Allowed", { status: 405 });
 
   const url = new URL(req.url);
@@ -60,3 +60,5 @@ export default function handler(req: Request): Response {
     headers: { "content-type": "application/json" },
   });
 }
+
+export default { fetch: handler };

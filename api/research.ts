@@ -18,7 +18,7 @@ const SYSTEM =
   "6. **Export Potential** — target markets, APEDA/FIEO programs, typical FOB prices\n\n" +
   "Use markdown headers (##). Be specific with numbers. Cite all sources with URLs.";
 
-export default async function handler(req: Request): Promise<Response> {
+async function handler(req: Request): Promise<Response> {
   if (req.method !== "POST") return new Response("Method Not Allowed", { status: 405 });
 
   const { productName, category } = await req.json().catch(() => ({}));
@@ -64,3 +64,5 @@ export default async function handler(req: Request): Promise<Response> {
     headers: { "content-type": "text/event-stream", "cache-control": "no-cache", connection: "keep-alive" },
   });
 }
+
+export default { fetch: handler };

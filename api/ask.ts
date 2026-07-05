@@ -4,7 +4,7 @@ import { answer } from "../rag/answer.js";
 
 export const config = { runtime: "nodejs", maxDuration: 60 };
 
-export default async function handler(req: Request): Promise<Response> {
+async function handler(req: Request): Promise<Response> {
   if (req.method !== "POST") return new Response("Method Not Allowed", { status: 405 });
 
   const { question } = await req.json().catch(() => ({ question: "" }));
@@ -60,3 +60,5 @@ export default async function handler(req: Request): Promise<Response> {
     },
   });
 }
+
+export default { fetch: handler };

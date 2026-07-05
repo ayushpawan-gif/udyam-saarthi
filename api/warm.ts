@@ -6,7 +6,7 @@ import { getDocBlocks } from "../rag/answer.js";
 
 export const config = { runtime: "nodejs" };
 
-export default function handler(): Response {
+function handler(): Response {
   // Touch the corpus singleton so it's resident in this container's memory.
   const docs = getDocBlocks();
   return new Response(
@@ -14,3 +14,5 @@ export default function handler(): Response {
     { headers: { "content-type": "application/json", "cache-control": "no-store" } }
   );
 }
+
+export default { fetch: handler };
