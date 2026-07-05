@@ -1,7 +1,11 @@
 // GET /api/browse?sector=Food&maxCap=500000&quadrant=SEND-FIRST&sort=payback&q=soap&limit=20
 // Pure JS filter+sort over 00-DATA.json — no LLM call, zero Anthropic cost.
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const DATA = require("../data/profiles.json") as Profile[];
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+const here = dirname(fileURLToPath(import.meta.url));
+const DATA = JSON.parse(readFileSync(join(here, "..", "data", "profiles.json"), "utf8")) as Profile[];
 
 export const config = { runtime: "nodejs" };
 
